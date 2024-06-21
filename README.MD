@@ -4,6 +4,23 @@ Scrapes image URLs from Alamy. The images are the zoomed in previews.
 
 ## Usage
 
+### Clone the repo
+
+```
+git clone https://github.com/KhoalaS/alamy-scraper.git
+```
+
+Or download as a [Zip file](https://github.com/KhoalaS/alamy-scraper/archive/refs/heads/main.zip) and extract it.
+
+
+Then change to the repos directory
+
+```
+cd alamy-scraper
+```
+
+---
+
 ### Set up a Venv (Optional)
 
 __Linux__
@@ -18,15 +35,17 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
+---
+
 ### Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Script
+---
 
-__Usage__
+### Run the Script
 
 ```bash
 usage: Alamy downloader [-h] FILE OUTPUT_DIR
