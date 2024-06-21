@@ -5,15 +5,12 @@ from selenium.webdriver.common.action_chains import ActionChains
 import re
 import random
 
-
-# Set up the WebDriver (assume ChromeDriver is in your PATH)
 options = webdriver.ChromeOptions()
 options.add_argument("--headless=new")
 # driver = webdriver.Chrome(options=options)
 driver = webdriver.Chrome()
 
 try:
-    # Load the local HTML file
     driver.get(
         "https://www.alamy.com/stock-photo/?name=H.+ARMSTRONG+ROBERTS&pseudoid=CEA9A46E-33B4-4443-8B6A-26377F61F632&sortBy=relevant")
     time.sleep(8)
@@ -22,7 +19,6 @@ try:
     accept.click()
 
     for i in range(1, 183):
-        # ".image-gallery > div > div > div > div > div"
         gallery = driver.find_element(
             by=By.CSS_SELECTOR, value=".image-gallery > div > div > div > div > div")
         groups = gallery.find_elements(by=By.CLASS_NAME, value="group")
@@ -65,5 +61,4 @@ try:
 
 
 finally:
-    # Close the browser
     driver.quit()
