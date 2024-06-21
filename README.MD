@@ -59,8 +59,15 @@ options:
   -t T        delay in seconds between downloads, default is 1 second
 ```
 
-__Example__
+__Examples__
 
 ```
 python main.py images.txt out
+```
+
+---
+
+No delay between downloads
+```
+python -t 0 main.py images.txt out
 ```
