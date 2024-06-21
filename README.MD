@@ -61,11 +61,11 @@ options:
 
 __Examples__
 
+Download into folder `out`
 ```
 python main.py images.txt out
 ```
 
----
 
 No delay between downloads
 ```
