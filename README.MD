@@ -26,7 +26,7 @@ cd alamy-scraper
 __Linux__
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate.fish
+source .venv/bin/activate
 ```
 
 __Windows__
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ### Run the Script
 
 ```bash
-usage: Alamy downloader [-h] FILE OUTPUT_DIR
+usage: Alamy downloader [-h] [-t T] FILE OUTPUT_DIR
 
 positional arguments:
   FILE        file with links to download
@@ -56,6 +56,7 @@ positional arguments:
 
 options:
   -h, --help  show this help message and exit
+  -t T        delay in seconds between downloads, default is 1 second
 ```
 
 __Example__
